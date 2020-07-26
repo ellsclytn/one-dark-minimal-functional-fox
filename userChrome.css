@@ -229,6 +229,11 @@ width: 50% !important;
   text-align: center !important;
 }
 
+/* Search/URL suggestions (on hover) */
+.urlbarView-row:not([type="tip"]):hover > .urlbarView-row-inner {
+  background: var(--mff-tab-selected-bg) !important;
+}
+
 #tracking-protection-icon-container, #identity-box {
   display: none;
 }
