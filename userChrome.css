@@ -24,7 +24,7 @@
   --mff-nav-toolbar-padding: 8px;
   --mff-sidebar-bg: var(--mff-bg);
   --mff-sidebar-color: var(--mff-icon-color);
-  --mff-tab-border-radius: 0px;
+  --mff-tab-border-radius: 4px;
   --mff-tab-color: var(--base06);
   --mff-tab-font-family: "Source Sans Pro", sans;
   --mff-tab-font-size: 11pt;
@@ -157,6 +157,14 @@ width: 50% !important;
   margin-top: 4px !important;
   max-height: var(--mff-tab-height) !important;
   min-height: var(--mff-tab-height) !important;
+}
+
+.tabbrowser-tab:first-child {
+  margin-left: 8px !important;
+}
+
+.tabbrowser-tab:last-child {
+  margin-right: 8px !important;
 }
 
 .tabbrowser-tab[soundplaying="true"] {
