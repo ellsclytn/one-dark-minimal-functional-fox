@@ -33,6 +33,7 @@
   --mff-tab-pinned-bg: var(--base0C);
   --mff-tab-selected-bg: var(--base02);
   --mff-urlbar-color: var(--base05);
+  --mff-urlbar-bg: var(--base01);
   --mff-urlbar-focused-color: var(--base07);
   --mff-urlbar-font-family: "Source Sans Pro", serif;
   --mff-urlbar-font-size: 12pt;
@@ -265,7 +266,7 @@ toolbar {
 }
 
 #urlbar-background {
-  background-color: var(--mff-bg) !important;
+  background-color: var(--mff-urlbar-bg) !important;
   border: none !important;
 }
 
