@@ -1,30 +1,47 @@
  :root {
 
+   /* OneDark. Lalit Magant (http://github.com/tilal6991) */
+  --base00: #282c34;
+  --base01: #353b45;
+  --base02: #3e4451;
+  --base03: #545862;
+  --base04: #565c64;
+  --base05: #abb2bf;
+  --base06: #b6bdca;
+  --base07: #c8ccd4;
+  --base08: #e06c75;
+  --base09: #d19a66;
+  --base0A: #e5c07b;
+  --base0B: #98c379;
+  --base0C: #56b6c2;
+  --base0D: #61afef;
+  --base0E: #c678dd;
+  --base0F: #be5046;
+
    /* Minimal Functional Fox variables*/
-  --mff-bg: #292f36;
-  --mff-icon-color: #e0fbfc;
+  --mff-bg: var(--base00);
+  --mff-icon-color: var(--base07);
   --mff-nav-toolbar-padding: 8px;
   --mff-sidebar-bg: var(--mff-bg);
-  --mff-sidebar-color: #e0fbfc;
+  --mff-sidebar-color: var(--mff-icon-color);
   --mff-tab-border-radius: 0px;
-  --mff-tab-color: #fefefa;
-  --mff-tab-font-family: "Cantarell", sans;
+  --mff-tab-color: var(--base06);
+  --mff-tab-font-family: "Source Sans Pro", sans;
   --mff-tab-font-size: 11pt;
   --mff-tab-font-weight: 400;
   --mff-tab-height: 32px;
-  --mff-tab-pinned-bg: #70c1b3;
-  --mff-tab-selected-bg: #ee6c4d;
-  --mff-tab-soundplaying-bg: #9c89b8;
-  --mff-urlbar-color: #98c1d9;
-  --mff-urlbar-focused-color: #e0fbfc;
-  --mff-urlbar-font-family: "Cantarell", serif;
+  --mff-tab-pinned-bg: var(--base0C);
+  --mff-tab-selected-bg: var(--base02);
+  --mff-urlbar-color: var(--base05);
+  --mff-urlbar-focused-color: var(--base07);
+  --mff-urlbar-font-family: "Source Sans Pro", serif;
   --mff-urlbar-font-size: 12pt;
   --mff-urlbar-font-weight: 700;
-  --mff-urlbar-results-color: #e0fbfc;
-  --mff-urlbar-results-font-family: "mononoki Nerd Font", serif;
+  --mff-urlbar-results-color: var(--mff-icon-color);
+  --mff-urlbar-results-font-family: "Source Sans Pro", serif;
   --mff-urlbar-results-font-size: 12pt;
   --mff-urlbar-results-font-weight: 700;
-  --mff-urlbar-results-url-color: #98c1d9;
+  --mff-urlbar-results-url-color: var(--base04);
   /*   --mff-tab-selected-bg: linear-gradient(90deg, rgba(232,74,95,1) 0%, rgba(255,132,124,1) 50%, rgba(254,206,168,1) 100%); */
   /*   --mff-urlbar-font-weight: 600; */
 
@@ -33,9 +50,13 @@
   --default-arrowpanel-background: var(--mff-bg) !important;
   --default-arrowpanel-color: #fefefa !important;
   --lwt-toolbarbutton-icon-fill: var(--mff-icon-color) !important;
-  --panel-disabled-color: #f9f9fa80;
+  --panel-disabled-color: var(--base04);
   --toolbar-bgcolor: var(--mff-bg) !important;
   --urlbar-separator-color: transparent !important;
+}
+
+.toolbarbutton-1:hover > image {
+  background: var(--mff-tab-selected-bg) !important;
 }
 
 /*
@@ -53,6 +74,10 @@
 .tab-background:not[visuallyselected] {
   background: var(--mff-tab-selected-bg) !important;
   opacity: 0.5 !important;
+}
+
+tab:hover {
+  background: var(--base01) !important;
 }
 
 /* This positions the tabs under the navaigator container */
@@ -134,7 +159,7 @@ width: 50% !important;
 }
 
 .tabbrowser-tab[soundplaying="true"] {
-  background-color: var(--mff-tab-soundplaying-bg) !important;
+  border: 1px solid var(--mff-tab-selected-bg) !important;
 }
 
 #tabs-newtab-button {
