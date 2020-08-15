@@ -212,7 +212,7 @@ width: 50% !important;
 }
 
 .urlbarView-row[type="bookmark"] > span{
-  color: green !important;
+  color: var(--base0B) !important;
 }
 
 .urlbarView-row[type="switchtab"] > span{
