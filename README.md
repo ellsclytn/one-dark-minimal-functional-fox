@@ -6,7 +6,7 @@
 
 ![](./screenshot.png)
 
-[![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
+[![License](https://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 [![Conventional commits](https://img.shields.io/badge/commits-conventional-informational)](https://www.conventionalcommits.org/en/v1.0.0/)
 
 ------
