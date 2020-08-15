@@ -1,0 +1,28 @@
+{
+  "name": "one-dark-minimal-functional-fox",
+  "version": "1.0.0",
+  "description": "A minimal, yet functional configuration for Firefox",
+  "scripts": {
+    "lint:commits:branch": "commitlint --from origin/master --to HEAD --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ellsclytn/one-dark-minimal-functional-fox.git"
+  },
+  "author": "Ellis Clayton <ellis@ellis.codes>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ellsclytn/one-dark-minimal-functional-fox/issues"
+  },
+  "homepage": "https://github.com/ellsclytn/one-dark-minimal-functional-fox#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "husky": "^4.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
