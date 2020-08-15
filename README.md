@@ -4,7 +4,10 @@
 
 > ###### *A minimal, yet functional configuration for Firefox!*
 
+![](./screenshot.png)
+
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
+
 ------
 ## Features
 
