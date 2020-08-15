@@ -216,7 +216,7 @@ width: 50% !important;
 }
 
 .urlbarView-row[type="switchtab"] > span{
-  color: orange !important;
+  color: var(--base0A) !important;
 }
 
 .urlbarView-url, .search-panel-one-offs-container {
